@@ -10,4 +10,9 @@ It provides us online environment to execute python with all it's depencies .
 The extension of python file is .py 
 # Command to run it in the Anaconda prompt 
             python file-name
+
+# Jupyter Notebook 
+It helps us to run our code individually . It helps us to divide our code in segment , that hels us in time saving .  
+# Google Colab 
+we make a notebook like as a jupiter Note to write a code on it . 
      
