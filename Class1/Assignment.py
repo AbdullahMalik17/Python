@@ -1,0 +1,6 @@
+print("My Name is 'Muhammad Abdullah Athar'.")
+print("My Father Name is 'Muhammad Athar'. ")
+print("Status:'Student'")
+print("ICS")
+print("My age is 16")
+print("I live in Bahawalpur ")
