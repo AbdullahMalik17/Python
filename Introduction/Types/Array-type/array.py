@@ -1,4 +1,4 @@
-arr1:list[str]=["Abdullah","Haleema","Hamna "]
+arr1:list[str]=["Abdullah","Haleema","Hamna"]
 print(arr1)
 print(type(arr1))
 print(id(arr1))
