@@ -1,0 +1,3 @@
+# The syntax of function 
+     def function_name():
+     ..... 

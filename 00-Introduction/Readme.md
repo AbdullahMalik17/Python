@@ -26,5 +26,10 @@ We can activate and deactivate in our virtual environment by following commands 
 # Making file like a Package.json
 Firstly , we make a file of txt , then write  the name of library or something and run the command  after activation of virtual environment as :-
            
-           pip install -r file.txt
-  
+           pip install -r file.txt 
+# Using jupiter notebook 
+   Installing command :-
+        pip install notebook
+
+# Virtual Environment without Anaconda 
+         python -m venv name  
