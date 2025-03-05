@@ -8,9 +8,9 @@ if page == 'Home':
     st.write('Welcome to the Home page')
     st.write('We Built very interactive clothes')
 elif page == 'Contact Us':
-    st.text_input('Enter your Name').title('NAME')
-    st.text_input('Enter your Email')    
-    st.text_area('Enter your Message')
+    st.text_input('Enter your Name').placeholder('Name')
+    st.text_input('Enter your Email').placeholder('Email')    
+    st.text_area('Enter your Message').placeholder('Enter your Comments')
     st.button('Submit')
 else:
     st.write('Welcome to the About Us page')    
