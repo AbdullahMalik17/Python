@@ -1,6 +1,5 @@
 import streamlit as st 
-st.title('Unique Boutique')
-st.header('Unique Boutique')
+st.title('Unique Boutique'
 st.write('Welcome to Unique Boutique! We are a boutique that sells unique items.')
 st.sidebar.title('Navigation')
 st.sidebar.write('Select a page:')
