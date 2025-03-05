@@ -8,7 +8,7 @@ if page == 'Home':
     st.write('Welcome to the Home page')
     st.write('We Built very interactive clothes')
 elif page == 'Contact Us':
-    st.text_input('Enter your Name')
+    st.text_input('Enter your Name').title('NAME')
     st.text_input('Enter your Email')    
     st.text_area('Enter your Message')
     st.button('Submit')
