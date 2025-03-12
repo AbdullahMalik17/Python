@@ -2,7 +2,7 @@ import streamlit as st
 
 # Title of the app
 st.title("Poultry Farm Management")
-
+st.header("Welcome to the Poultry Farm Management App").radio("Goto Home", ["Home", "Add Chicken", "View Chickens"] )
 # Sidebar for navigation
 st.sidebar.title("Navigation")
 options = st.sidebar.radio("Go to", ["Home", "Add Chicken", "View Chickens"])
