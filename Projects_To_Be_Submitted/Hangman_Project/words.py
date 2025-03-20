@@ -1,0 +1,1 @@
+words = ["cat", "dog", "sun", "fun", "run", "hat", "mat", "red", "blue", "green", "tiger", "house", "happy", "table", "chair", "water", "music", "dance", "sleep", "dream", "oxygen", "python", "castle", "galaxy", "rainbow", "diamond", "penguin", "whisper", "miracle", "journey"]
