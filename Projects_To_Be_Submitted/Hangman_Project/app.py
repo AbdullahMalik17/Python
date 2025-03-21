@@ -31,7 +31,9 @@ def hangman():
         st.write('Lives left: ', lives)
         st.write("_"*50)
     # get user input for letter
-        user_letter = st.text_input('Guess a letter: ').upper()
+        user_letter = st.text_input('Guess a letter:', key='user_input').upper()
+        if user_letter:  # Only process if user entered something
+            st.session_state.user_letter = user_letter
         if user_letter in alphabets - used_letters:
            used_letters.add(user_letter)
            if user_letter in word_letter:
@@ -64,5 +66,5 @@ Better luck next time!
         hangman()
     else:
         st.write("Thanks for playing! Goodbye!")         
-    
+
 hangman()
