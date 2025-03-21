@@ -2,6 +2,12 @@ import streamlit as st
 from words import words
 import random 
 import string
+
+if 'user_letter' not in st.session_state:
+    st.session_state.user_letter = ''
+if 'game_state' not in st.session_state:
+    st.session_state.game_state = {}
+
 st.title("Hangman Game")
 st.write("Welcome to Hangman Game! Let's play!")
 def get_valid_word(words):
@@ -24,6 +30,7 @@ def hangman():
         st.write('Used letters: ', ' '.join(used_letters))
         st.write('Lives left: ', lives)
         st.write("_"*50)
+    # get user input for letter
         user_letter = st.text_input('Guess a letter: ').upper()
         if user_letter in alphabets - used_letters:
            used_letters.add(user_letter)
@@ -58,4 +65,4 @@ Better luck next time!
     else:
         st.write("Thanks for playing! Goodbye!")         
     
-hangman()   
+hangman()
