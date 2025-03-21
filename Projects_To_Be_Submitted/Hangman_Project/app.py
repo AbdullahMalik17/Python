@@ -18,6 +18,7 @@ def hangman():
 
    # Giving letter from the user
     while len(word_letter) > 0 and lives > 0:
+        word_list = [letter if letter in used_letters else '-' for letter in word]        
         st.write(list(map(lambda x: x if x in used_letters else '-', word)))
         st.write('Current word: ', ' '.join(word_list))
         st.write('Used letters: ', ' '.join(used_letters))
@@ -30,11 +31,11 @@ def hangman():
               word_letter.remove(user_letter)
            else:
               lives = lives - 1
-              print('Letter is not in the word.')   
+              st.warning('Letter is not in the word.')   
         elif user_letter in used_letters:
-           print('You have already used that character. Please try again.')
+           st.warning('You have already used that character. Please try again.')
         else:
-           print('Invalid character. Please try again.')
+           st.warning('Invalid character. Please try again.')
         # Replace the final if-else block with this enhanced version
     st.write("\n" + "="*50)
     if len(word_letter) == 0:
