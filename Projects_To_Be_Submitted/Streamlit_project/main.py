@@ -57,7 +57,7 @@ def main():
                         st.session_state.lives -= 1
                         st.warning("Wrong guess! 😢")
                 else:
-                    st.warning("You already guessed that letter! 🔄")
+                    st.warning("You already guessed that letter!🔄 ")
             else:
                 st.error("Please enter a valid letter! 🚫")
     
@@ -76,4 +76,4 @@ def main():
             st.experimental_rerun()
 
 if __name__ == "__main__":
-    main()
+    main() 

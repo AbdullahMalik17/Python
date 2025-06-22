@@ -28,7 +28,7 @@ def hangman():
         st.write(list(map(lambda x: x if x in used_letters else '-', word)))
         st.write('Current word: ', ' '.join(word_list))
         st.write('Used letters: ', ' '.join(used_letters))
-        st.write('Lives left: ', lives)
+        st.write('❤️'*lives)
         st.write("_"*50)
     # get user input for letter
         user_letter = st.text_input('Guess a letter:', key='user_input').upper()
@@ -42,9 +42,9 @@ def hangman():
               lives = lives - 1
               st.warning('Letter is not in the word.')   
         elif user_letter in used_letters:
-           st.warning('You have already used that character. Please try again.')
+           st.warning("You already guessed that letter!🔄 ")
         else:
-           st.warning('Invalid character. Please try again.')
+           st.warning('Invalid character. Please try again.🚫')
         # Replace the final if-else block with this enhanced version
     st.write("\n" + "="*50)
     if len(word_letter) == 0:
